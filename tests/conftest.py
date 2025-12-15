@@ -1,11 +1,13 @@
 """tests/conftest.py"""
 
 import subprocess
-import time
 import sys
+import time
+import urllib.error
+import urllib.request
+
 import pytest
 from playwright.sync_api import sync_playwright
-import httpx
 
 
 @pytest.fixture(scope='session')
@@ -26,17 +28,16 @@ def fastapi_server():
 
     print("Starting FastAPI server...")
 
-    with httpx.Client(timeout=1.0) as client:
-        while time.time() - start_time < timeout:
-            try:
-                response = client.get(server_url)
-                if response.status_code == 200:
+    while time.time() - start_time < timeout:
+        try:
+            with urllib.request.urlopen(server_url) as response:
+                if response.status == 200:
                     server_up = True
                     print("FastAPI server is up and running.")
                     break
-            except httpx.RequestError:
-                pass
-            time.sleep(1)
+        except urllib.error.URLError:
+            pass
+        time.sleep(1)
 
     if not server_up:
         fastapi_process.terminate()
