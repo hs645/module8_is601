@@ -1,4 +1,53 @@
 # main.py
+# main.py
+
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
+from fastapi.templating import Jinja2Templates
+from pydantic import BaseModel, Field, field_validator  # Use @validator for Pydantic 1.x
+from fastapi.exceptions import RequestValidationError
+from app.operations import add, subtract, multiply, divide  # Ensure correct import path
+import uvicorn
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+app = FastAPI()
+
+# Setup templates directory
+templates = Jinja2Templates(directory="templates")
+
+# Pydantic model for request data
+class OperationRequest(BaseModel):
+    a: float = Field(..., description="The first number")
+    b: float = Field(..., description="The second number")
+
+    @field_validator('a', 'b')  # Correct decorator for Pydantic 1.x
+    def validate_numbers(cls, value):
+        if not isinstance(value, (int, float)):
+            raise ValueError('Both a and b must be numbers.')
+        return value
+
+# Pydantic model for successful response
+class OperationResponse(BaseModel):
+    result: float = Field(..., description="The result of the operation")
+
+# Pydantic model for error response
+class ErrorResponse(BaseModel):
+    error: str = Field(..., description="Error message")
+
+# Custom Exception Handlers
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    logger.error(f"HTTPException on {request.url.path}: {exc.detail}")
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={"error": exc.detail},
+    )
+
+# main.py
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
