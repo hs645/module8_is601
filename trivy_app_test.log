@@ -1,0 +1,877 @@
+2025-12-15T07:45:05Z	INFO	[vulndb] Need to update DB
+2025-12-15T07:45:05Z	INFO	[vulndb] Downloading vulnerability DB...
+2025-12-15T07:45:05Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+7.09 MiB / 77.79 MiB [----->_________________________________________________________] 9.12% ? p/s ?22.18 MiB / 77.79 MiB [----------------->___________________________________________] 28.51% ? p/s ?38.27 MiB / 77.79 MiB [------------------------------>______________________________] 49.20% ? p/s ?51.37 MiB / 77.79 MiB [------------------------------->________________] 66.03% 73.77 MiB p/s ETA 0s66.89 MiB / 77.79 MiB [----------------------------------------->______] 85.98% 73.77 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 73.77 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 71.85 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 71.85 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 71.85 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 67.21 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 67.21 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 67.21 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 62.88 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 62.88 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 62.88 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 58.82 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 58.82 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 58.82 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 55.03 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 55.03 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 55.03 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 51.48 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 51.48 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 51.48 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 48.15 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 48.15 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 48.15 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 45.05 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [---------------------------------------------->] 100.00% 45.05 MiB p/s ETA 0s77.79 MiB / 77.79 MiB [-------------------------------------------------] 100.00% 13.47 MiB p/s 6.0s2025-12-15T07:45:12Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+2025-12-15T07:45:12Z	INFO	[vuln] Vulnerability scanning is enabled
+2025-12-15T07:45:12Z	INFO	[secret] Secret scanning is enabled
+2025-12-15T07:45:12Z	INFO	[secret] If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2025-12-15T07:45:12Z	INFO	[secret] Please see https://trivy.dev/docs/v0.68/guide/scanner/secret#recommendation for faster secret detection
+2025-12-15T07:45:26Z	INFO	[python] Licenses acquired from one or more METADATA files may be subject to additional terms. Use `--debug` flag to see all affected packages.
+2025-12-15T07:45:37Z	INFO	Detected OS	family="debian" version="13.2"
+2025-12-15T07:45:37Z	INFO	[debian] Detecting vulnerabilities...	os_version="13" pkg_num=142
+2025-12-15T07:45:37Z	INFO	Number of language-specific files	num=2
+2025-12-15T07:45:37Z	INFO	[node-pkg] Detecting vulnerabilities...
+2025-12-15T07:45:37Z	INFO	[python-pkg] Detecting vulnerabilities...
+2025-12-15T07:45:37Z	WARN	Using severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.68/guide/scanner/vulnerability#severity-selection for details.
+2025-12-15T07:45:38Z	INFO	Table result includes only package filenames. Use '--format json' option to get the full path to the package file.
+
+Report Summary
+
+┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
+│                                      Target                                      │    Type    │ Vulnerabilities │ Secrets │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app:test (debian 13.2)                                                           │   debian   │       82        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/playwright/driver/package/package.json     │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/playwright/driver/package/package.json  │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/playwright/driver/package/package.json    │  node-pkg  │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/annotated_types-0.7.0.dist-info/METADATA   │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/anyio-4.6.2.post1.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/astroid-3.3.5.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/certifi-2024.8.30.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/charset_normalizer-3.4.0.dist-info/METADA- │ python-pkg │        0        │    -    │
+│ TA                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/click-8.1.7.dist-info/METADATA             │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/coverage-7.6.4.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/dill-0.3.9.dist-info/METADATA              │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/exceptiongroup-1.2.2.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/fastapi-0.115.4.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/greenlet-3.3.0.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/h11-0.14.0.dist-info/METADATA              │ python-pkg │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/httpcore-1.0.6.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/httpx-0.27.2.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/idna-3.10.dist-info/METADATA               │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/iniconfig-2.0.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/isort-5.13.2.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/jinja2-3.1.4.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/markupsafe-3.0.2.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/mccabe-0.7.0.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/packaging-24.2.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pip-25.3.dist-info/METADATA                │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/platformdirs-4.3.6.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/playwright-1.57.0.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pluggy-1.5.0.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pydantic-2.12.5.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pydantic_core-2.41.5.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pyee-13.0.0.dist-info/METADATA             │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pylint-3.3.1.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pytest-8.3.3.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pytest_cov-6.0.0.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/pytest_pylint-0.21.0.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/requests-2.32.3.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/sniffio-1.3.1.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/starlette-0.41.2.dist-info/METADATA        │ python-pkg │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/tomli-2.0.2.dist-info/METADATA             │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/tomlkit-0.13.2.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/typing_extensions-4.15.0.dist-info/METADA- │ python-pkg │        0        │    -    │
+│ TA                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/typing_inspection-0.4.2.dist-info/METADATA │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/urllib3-2.2.3.dist-info/METADATA           │ python-pkg │        2        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv/lib/python3.14/site-packages/uvicorn-0.32.0.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/pip-25.3.dist-info/METADATA               │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/pkg_resources/tests/data/my-test-package- │ python-pkg │        0        │    -    │
+│ _unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/pkg_resources/tests/data/my-test-package- │ python-pkg │        0        │    -    │
+│ _zipped-egg/my_test_package-1.0-py3.7.egg                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools-80.9.0.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dis- │ python-pkg │        0        │    -    │
+│ t-info/METADATA                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2- │ python-pkg │        0        │    -    │
+│ .0.dist-info/METADATA                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.- │ python-pkg │        0        │    -    │
+│ 0.0.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/inflect-7.3.1.dist-in- │ python-pkg │        0        │    -    │
+│ fo/METADATA                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/jaraco.collections-5.- │ python-pkg │        0        │    -    │
+│ 1.0.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/jaraco.context-5.3.0.- │ python-pkg │        0        │    -    │
+│ dist-info/METADATA                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/jaraco.functools-4.0.- │ python-pkg │        0        │    -    │
+│ 1.dist-info/METADATA                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-3.12.1.di- │ python-pkg │        0        │    -    │
+│ st-info/METADATA                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.3.0- │ python-pkg │        0        │    -    │
+│ .dist-info/METADATA                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/packaging-24.2.dist-i- │ python-pkg │        0        │    -    │
+│ nfo/METADATA                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.2.2.di- │ python-pkg │        0        │    -    │
+│ st-info/METADATA                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.0.1.dist-info- │ python-pkg │        0        │    -    │
+│ /METADATA                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-- │ python-pkg │        0        │    -    │
+│ info/METADATA                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/typing_extensions-4.1- │ python-pkg │        0        │    -    │
+│ 2.2.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.45.1.dist-inf- │ python-pkg │        0        │    -    │
+│ o/METADATA                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info- │ python-pkg │        0        │    -    │
+│ /METADATA                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv2/lib/python3.14/site-packages/wheel-0.45.1.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/maturin-1.10.2.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/pip-25.3.dist-info/METADATA               │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/pkg_resources/tests/data/my-test-package- │ python-pkg │        0        │    -    │
+│ _unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/pkg_resources/tests/data/my-test-package- │ python-pkg │        0        │    -    │
+│ _zipped-egg/my_test_package-1.0-py3.7.egg                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools-80.9.0.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/autocommand-2.2.2.dis- │ python-pkg │        0        │    -    │
+│ t-info/METADATA                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/backports.tarfile-1.2- │ python-pkg │        0        │    -    │
+│ .0.dist-info/METADATA                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/importlib_metadata-8.- │ python-pkg │        0        │    -    │
+│ 0.0.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/inflect-7.3.1.dist-in- │ python-pkg │        0        │    -    │
+│ fo/METADATA                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/jaraco.collections-5.- │ python-pkg │        0        │    -    │
+│ 1.0.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/jaraco.context-5.3.0.- │ python-pkg │        0        │    -    │
+│ dist-info/METADATA                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/jaraco.functools-4.0.- │ python-pkg │        0        │    -    │
+│ 1.dist-info/METADATA                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/jaraco.text-3.12.1.di- │ python-pkg │        0        │    -    │
+│ st-info/METADATA                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/more_itertools-10.3.0- │ python-pkg │        0        │    -    │
+│ .dist-info/METADATA                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/packaging-24.2.dist-i- │ python-pkg │        0        │    -    │
+│ nfo/METADATA                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/platformdirs-4.2.2.di- │ python-pkg │        0        │    -    │
+│ st-info/METADATA                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/tomli-2.0.1.dist-info- │ python-pkg │        0        │    -    │
+│ /METADATA                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-- │ python-pkg │        0        │    -    │
+│ info/METADATA                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/typing_extensions-4.1- │ python-pkg │        0        │    -    │
+│ 2.2.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/wheel-0.45.1.dist-inf- │ python-pkg │        0        │    -    │
+│ o/METADATA                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info- │ python-pkg │        0        │    -    │
+│ /METADATA                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv3/lib/python3.14/site-packages/wheel-0.45.1.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/MarkupSafe-3.0.2.dist-info/METADATA     │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/annotated_types-0.7.0.dist-info/METADA- │ python-pkg │        0        │    -    │
+│ TA                                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/anyio-4.6.2.post1.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/astroid-3.3.5.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/certifi-2024.8.30.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/charset_normalizer-3.4.0.dist-info/MET- │ python-pkg │        0        │    -    │
+│ ADATA                                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/click-8.1.7.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/coverage-7.6.4.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/dill-0.3.9.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/exceptiongroup-1.2.2.dist-info/METADATA │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/fastapi-0.115.4.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/greenlet-3.1.1.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/h11-0.14.0.dist-info/METADATA           │ python-pkg │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/httpcore-1.0.6.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/httpx-0.27.2.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/idna-3.10.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/iniconfig-2.0.0.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/isort-5.13.2.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/jinja2-3.1.4.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/maturin-1.10.2.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/mccabe-0.7.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/packaging-24.2.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pip-25.3.dist-info/METADATA             │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pkg_resources/tests/data/my-test-packa- │ python-pkg │        0        │    -    │
+│ ge_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pkg_resources/tests/data/my-test-packa- │ python-pkg │        0        │    -    │
+│ ge_zipped-egg/my_test_package-1.0-py3.7.egg                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/platformdirs-4.3.6.dist-info/METADATA   │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/playwright-1.48.0.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pluggy-1.5.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pydantic-2.9.2.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pydantic_core-2.23.4.dist-info/METADATA │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pyee-12.0.0.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pylint-3.3.1.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pytest-8.3.3.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pytest_cov-6.0.0.dist-info/METADATA     │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/pytest_pylint-0.21.0.dist-info/METADATA │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/requests-2.32.3.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools-80.9.0.dist-info/METADATA    │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/autocommand-2.2.2.d- │ python-pkg │        0        │    -    │
+│ ist-info/METADATA                                                                │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/backports.tarfile-1- │ python-pkg │        0        │    -    │
+│ .2.0.dist-info/METADATA                                                          │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/importlib_metadata-- │ python-pkg │        0        │    -    │
+│ 8.0.0.dist-info/METADATA                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/inflect-7.3.1.dist-- │ python-pkg │        0        │    -    │
+│ info/METADATA                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/jaraco.collections-- │ python-pkg │        0        │    -    │
+│ 5.1.0.dist-info/METADATA                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/jaraco.context-5.3.- │ python-pkg │        0        │    -    │
+│ 0.dist-info/METADATA                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/jaraco.functools-4.- │ python-pkg │        0        │    -    │
+│ 0.1.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/jaraco.text-3.12.1.- │ python-pkg │        0        │    -    │
+│ dist-info/METADATA                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/more_itertools-10.3- │ python-pkg │        0        │    -    │
+│ .0.dist-info/METADATA                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/packaging-24.2.dist- │ python-pkg │        0        │    -    │
+│ -info/METADATA                                                                   │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/platformdirs-4.2.2.- │ python-pkg │        0        │    -    │
+│ dist-info/METADATA                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/tomli-2.0.1.dist-in- │ python-pkg │        0        │    -    │
+│ fo/METADATA                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/typeguard-4.3.0.dis- │ python-pkg │        0        │    -    │
+│ t-info/METADATA                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/typing_extensions-4- │ python-pkg │        0        │    -    │
+│ .12.2.dist-info/METADATA                                                         │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/wheel-0.45.1.dist-i- │ python-pkg │        0        │    -    │
+│ nfo/METADATA                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/setuptools/_vendor/zipp-3.19.2.dist-in- │ python-pkg │        0        │    -    │
+│ fo/METADATA                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/sniffio-1.3.1.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/starlette-0.41.2.dist-info/METADATA     │ python-pkg │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/tomli-2.0.2.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/tomlkit-0.13.2.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/typing_extensions-4.12.2.dist-info/MET- │ python-pkg │        0        │    -    │
+│ ADATA                                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/urllib3-2.2.3.dist-info/METADATA        │ python-pkg │        2        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/uvicorn-0.32.0.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ app/venv311/lib/python3.11/site-packages/wheel-0.45.1.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/MarkupSafe-3.0.2.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/METADATA  │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/anyio-4.6.2.post1.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/astroid-3.3.5.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/certifi-2024.8.30.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/charset_normalizer-3.4.0.dist-info/METAD- │ python-pkg │        0        │    -    │
+│ ATA                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/click-8.1.7.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/coverage-7.6.4.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/dill-0.3.9.dist-info/METADATA             │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/exceptiongroup-1.2.2.dist-info/METADATA   │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/fastapi-0.115.4.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/greenlet-3.1.1.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/h11-0.14.0.dist-info/METADATA             │ python-pkg │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/httpcore-1.0.6.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/httpx-0.27.2.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/idna-3.10.dist-info/METADATA              │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/iniconfig-2.0.0.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/isort-5.13.2.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/jinja2-3.1.4.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/mccabe-0.7.0.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/packaging-24.2.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pip-25.3.dist-info/METADATA               │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package- │ python-pkg │        0        │    -    │
+│ _unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package- │ python-pkg │        0        │    -    │
+│ _zipped-egg/my_test_package-1.0-py3.7.egg                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/platformdirs-4.3.6.dist-info/METADATA     │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/playwright-1.48.0.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pluggy-1.5.0.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pydantic-2.9.2.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pydantic_core-2.23.4.dist-info/METADATA   │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pyee-12.0.0.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pylint-3.3.1.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pytest-8.3.3.dist-info/METADATA           │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pytest_cov-6.0.0.dist-info/METADATA       │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/pytest_pylint-0.21.0.dist-info/METADATA   │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/requests-2.32.3.dist-info/METADATA        │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools-80.9.0.dist-info/METADATA      │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/autocommand-2.2.2.dis- │ python-pkg │        0        │    -    │
+│ t-info/METADATA                                                                  │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/backports.tarfile-1.2- │ python-pkg │        0        │    -    │
+│ .0.dist-info/METADATA                                                            │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/importlib_metadata-8.- │ python-pkg │        0        │    -    │
+│ 0.0.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/inflect-7.3.1.dist-in- │ python-pkg │        0        │    -    │
+│ fo/METADATA                                                                      │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/jaraco.collections-5.- │ python-pkg │        0        │    -    │
+│ 1.0.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/jaraco.context-5.3.0.- │ python-pkg │        0        │    -    │
+│ dist-info/METADATA                                                               │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/jaraco.functools-4.0.- │ python-pkg │        0        │    -    │
+│ 1.dist-info/METADATA                                                             │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/jaraco.text-3.12.1.di- │ python-pkg │        0        │    -    │
+│ st-info/METADATA                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/more_itertools-10.3.0- │ python-pkg │        0        │    -    │
+│ .dist-info/METADATA                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/packaging-24.2.dist-i- │ python-pkg │        0        │    -    │
+│ nfo/METADATA                                                                     │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/platformdirs-4.2.2.di- │ python-pkg │        0        │    -    │
+│ st-info/METADATA                                                                 │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/tomli-2.0.1.dist-info- │ python-pkg │        0        │    -    │
+│ /METADATA                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-- │ python-pkg │        0        │    -    │
+│ info/METADATA                                                                    │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/typing_extensions-4.1- │ python-pkg │        0        │    -    │
+│ 2.2.dist-info/METADATA                                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/wheel-0.45.1.dist-inf- │ python-pkg │        0        │    -    │
+│ o/METADATA                                                                       │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info- │ python-pkg │        0        │    -    │
+│ /METADATA                                                                        │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/sniffio-1.3.1.dist-info/METADATA          │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/starlette-0.41.2.dist-info/METADATA       │ python-pkg │        1        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/tomli-2.0.2.dist-info/METADATA            │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/tomlkit-0.13.2.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/typing_extensions-4.12.2.dist-info/METAD- │ python-pkg │        0        │    -    │
+│ ATA                                                                              │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/urllib3-2.2.3.dist-info/METADATA          │ python-pkg │        2        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/uvicorn-0.32.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.10/site-packages/wheel-0.45.1.dist-info/METADATA           │ python-pkg │        0        │    -    │
+└──────────────────────────────────────────────────────────────────────────────────┴────────────┴─────────────────┴─────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+app:test (debian 13.2)
+======================
+Total: 82 (HIGH: 82, CRITICAL: 0)
+
+┌───────────────────────┬────────────────┬──────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│        Library        │ Vulnerability  │ Severity │  Status  │ Installed Version │ Fixed Version │                            Title                             │
+├───────────────────────┼────────────────┼──────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libpython3.13         │ CVE-2025-8194  │ HIGH     │ affected │ 3.13.5-2          │               │ cpython: Cpython infinite loop when parsing a tarfile        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-8194                    │
+├───────────────────────┤                │          │          │                   ├───────────────┤                                                              │
+│ libpython3.13-dev     │                │          │          │                   │               │                                                              │
+│                       │                │          │          │                   │               │                                                              │
+├───────────────────────┤                │          │          │                   ├───────────────┤                                                              │
+│ libpython3.13-minimal │                │          │          │                   │               │                                                              │
+│                       │                │          │          │                   │               │                                                              │
+├───────────────────────┤                │          │          │                   ├───────────────┤                                                              │
+│ libpython3.13-stdlib  │                │          │          │                   │               │                                                              │
+│                       │                │          │          │                   │               │                                                              │
+├───────────────────────┼────────────────┤          │          ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ linux-libc-dev        │ CVE-2013-7445  │          │          │ 6.12.57-1         │               │ kernel: memory exhaustion via crafted Graphics Execution     │
+│                       │                │          │          │                   │               │ Manager (GEM) objects                                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2013-7445                    │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2019-19449 │          │          │                   │               │ kernel: mounting a crafted f2fs filesystem image can lead to │
+│                       │                │          │          │                   │               │ slab-out-of-bounds read...                                   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-19449                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2019-19814 │          │          │                   │               │ kernel: out-of-bounds write in __remove_dirty_segment in     │
+│                       │                │          │          │                   │               │ fs/f2fs/segment.c                                            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-19814                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3847  │          │          │                   │               │ kernel: low-privileged user privileges escalation            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2021-3847                    │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3864  │          │          │                   │               │ kernel: descendant's dumpable setting with certain SUID      │
+│                       │                │          │          │                   │               │ binaries                                                     │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2021-3864                    │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2024-21803 │          │          │                   │               │ kernel: bluetooth: use-after-free vulnerability in           │
+│                       │                │          │          │                   │               │ af_bluetooth.c                                               │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-21803                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2024-58015 │          │          │                   │               │ kernel: wifi: ath12k: Fix for out-of bound access error      │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-58015                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2024-58093 │          │          │                   │               │ kernel: Linux kernel: PCI/ASPM use-after-free during         │
+│                       │                │          │          │                   │               │ hot-unplug                                                   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2024-58093                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-22104 │          │          │                   │               │ kernel: ibmvnic: Use kernel helpers for hex dumps            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-22104                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-22107 │          │          │                   │               │ kernel: net: dsa: sja1105: fix kasan out-of-bounds warning   │
+│                       │                │          │          │                   │               │ in sja1105_table_delete_entry()                              │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-22107                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-22118 │          │          │                   │               │ kernel: ice: validate queue quanta parameters to prevent OOB │
+│                       │                │          │          │                   │               │ access                                                       │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-22118                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-22121 │          │          │                   │               │ kernel: ext4: fix out-of-bound read in                       │
+│                       │                │          │          │                   │               │ ext4_xattr_inode_dec_ref_all()                               │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-22121                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-37825 │          │          │                   │               │ kernel: nvmet: fix out-of-bounds access in nvmet_enable_port │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-37825                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38137 │          │          │                   │               │ kernel: PCI/pwrctrl: Cancel outstanding rescan work when     │
+│                       │                │          │          │                   │               │ unregistering                                                │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38137                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38187 │          │          │                   │               │ kernel: drm/nouveau: fix a use-after-free in                 │
+│                       │                │          │          │                   │               │ r535_gsp_rpc_push()                                          │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38187                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38248 │          │          │                   │               │ kernel: bridge: mcast: Fix use-after-free during router port │
+│                       │                │          │          │                   │               │ configuration                                                │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38248                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38421 │          │          │                   │               │ kernel: platform/x86/amd: pmf: Use device managed            │
+│                       │                │          │          │                   │               │ allocations                                                  │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38421                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38584 │          │          │                   │               │ kernel: padata: Fix pd UAF once and for all                  │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38584                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38627 │          │          │                   │               │ kernel: f2fs: compress: fix UAF of f2fs_inode_info in        │
+│                       │                │          │          │                   │               │ f2fs_free_dic                                                │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38627                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-38636 │          │          │                   │               │ kernel: rv: Use strings in da monitors tracepoints           │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-38636                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-39859 │          │          │                   │               │ kernel: ptp: ocp: fix use-after-free bugs causing by         │
+│                       │                │          │          │                   │               │ ptp_ocp_watchdog                                             │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-39859                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-39862 │          │          │                   │               │ kernel: wifi: mt76: mt7915: fix list corruption after        │
+│                       │                │          │          │                   │               │ hardware restart                                             │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-39862                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-39905 │          │          │                   │               │ kernel: net: phylink: add lock for serializing concurrent    │
+│                       │                │          │          │                   │               │ pl->phydev writes with resolver...                           │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-39905                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-39933 │          │          │                   │               │ kernel: smb: client: let recv_done verify data_offset,       │
+│                       │                │          │          │                   │               │ data_length and remaining_data_length                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-39933                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-39981 │          │          │                   │               │ kernel: Bluetooth: MGMT: Fix possible UAFs                   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-39981                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40064 │          │          │                   │               │ kernel: smc: Fix use-after-free in __pnet_find_base_ndev()   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40064                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40135 │          │          │                   │               │ kernel: ipv6: use RCU in ip6_xmit()                          │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40135                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40158 │          │          │                   │               │ kernel: ipv6: use RCU in ip6_output()                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40158                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40168 │          │          │                   │               │ kernel: smc: Use __sk_dst_get() and dst_dev_rcu() in         │
+│                       │                │          │          │                   │               │ smc_clc_prfx_match()                                         │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40168                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40170 │          │          │                   │               │ kernel: net: use dst_dev_rcu() in sk_setup_caps()            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40170                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40210 │          │          │                   │               │ kernel: Revert "NFSD: Remove the cap on number of operations │
+│                       │                │          │          │                   │               │ per NFSv4...                                                 │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40210                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40214 │          │          │                   │               │ kernel: af_unix: Initialise scc_index in unix_add_edge()     │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40214                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40215 │          │          │                   │               │ kernel: xfrm: delete x->tunnel as we delete x                │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40215                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40217 │          │          │                   │               │ kernel: pidfs: validate extensible ioctls                    │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40217                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40246 │          │          │                   │               │ kernel: xfs: fix out of bounds memory read error in symlink  │
+│                       │                │          │          │                   │               │ repair...                                                    │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40246                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40248 │          │          │                   │               │ kernel: vsock: Ignore signal/timeout on connect() if already │
+│                       │                │          │          │                   │               │ established                                                  │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40248                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40250 │          │          │                   │               │ kernel: net/mlx5: Clean up only new IRQ glue on              │
+│                       │                │          │          │                   │               │ request_irq() failure                                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40250                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40251 │          │          │                   │               │ kernel: devlink: rate: Unset parent pointer in               │
+│                       │                │          │          │                   │               │ devl_rate_nodes_destroy                                      │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40251                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40252 │          │          │                   │               │ kernel: net: qlogic/qede: fix potential out-of-bounds read   │
+│                       │                │          │          │                   │               │ in qede_tpa_cont() and qede_tpa_end()                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40252                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40254 │          │          │                   │               │ kernel: net: openvswitch: remove never-working support for   │
+│                       │                │          │          │                   │               │ setting nsh fields                                           │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40254                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40258 │          │          │                   │               │ kernel: mptcp: fix race condition in mptcp_schedule_work()   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40258                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40259 │          │          │                   │               │ kernel: scsi: sg: Do not sleep in atomic context             │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40259                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40264 │          │          │                   │               │ kernel: be2net: pass wrb_params in case of OS2BMC            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40264                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40269 │          │          │                   │               │ kernel: ALSA: usb-audio: Fix potential overflow of PCM       │
+│                       │                │          │          │                   │               │ transfer buffer                                              │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40269                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40271 │          │          │                   │               │ kernel: fs/proc: fix uaf in proc_readdir_de()                │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40271                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40272 │          │          │                   │               │ kernel: mm/secretmem: fix use-after-free race in fault       │
+│                       │                │          │          │                   │               │ handler                                                      │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40272                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40275 │          │          │                   │               │ kernel: ALSA: usb-audio: Fix NULL pointer dereference in     │
+│                       │                │          │          │                   │               │ snd_usb_mixer_controls_badd                                  │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40275                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40277 │          │          │                   │               │ kernel: drm/vmwgfx: Validate command header size against     │
+│                       │                │          │          │                   │               │ SVGA_CMD_MAX_DATASIZE                                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40277                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40279 │          │          │                   │               │ kernel: net: sched: act_connmark: initialize struct tc_ife   │
+│                       │                │          │          │                   │               │ to fix kernel leak                                           │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40279                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40280 │          │          │                   │               │ kernel: tipc: Fix use-after-free in tipc_mon_reinit_self()   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40280                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40281 │          │          │                   │               │ kernel: sctp: prevent possible shift-out-of-bounds in        │
+│                       │                │          │          │                   │               │ sctp_transport_update_rto                                    │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40281                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40283 │          │          │                   │               │ kernel: Bluetooth: btusb: reorder cleanup in                 │
+│                       │                │          │          │                   │               │ btusb_disconnect to avoid UAF                                │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40283                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40284 │          │          │                   │               │ kernel: Bluetooth: MGMT: cancel mesh send timer when hdev    │
+│                       │                │          │          │                   │               │ removed                                                      │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40284                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40287 │          │          │                   │               │ kernel: exfat: fix improper check of                         │
+│                       │                │          │          │                   │               │ dentry.stream.valid_size                                     │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40287                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40292 │          │          │                   │               │ kernel: virtio-net: fix received length check in big packets │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40292                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40293 │          │          │                   │               │ kernel: iommufd: Don't overflow during division for dirty    │
+│                       │                │          │          │                   │               │ tracking                                                     │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40293                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40294 │          │          │                   │               │ kernel: Bluetooth: MGMT: Fix OOB access in                   │
+│                       │                │          │          │                   │               │ parse_adv_monitor_pattern()                                  │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40294                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40297 │          │          │                   │               │ kernel: net: bridge: fix use-after-free due to MST port      │
+│                       │                │          │          │                   │               │ state bypass                                                 │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40297                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40301 │          │          │                   │               │ kernel: Bluetooth: hci_event: validate skb length for        │
+│                       │                │          │          │                   │               │ unknown CC opcode                                            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40301                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40302 │          │          │                   │               │ kernel: media: videobuf2: forbid remove_bufs when legacy     │
+│                       │                │          │          │                   │               │ fileio is active                                             │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40302                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40304 │          │          │                   │               │ kernel: fbdev: Add bounds checking in bit_putcs to fix       │
+│                       │                │          │          │                   │               │ vmalloc-out-of-bounds                                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40304                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40305 │          │          │                   │               │ kernel: 9p/trans_fd: p9_fd_request: kick rx thread if        │
+│                       │                │          │          │                   │               │ EPOLLIN                                                      │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40305                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40307 │          │          │                   │               │ kernel: exfat: validate cluster allocation bits of the       │
+│                       │                │          │          │                   │               │ allocation bitmap                                            │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40307                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40308 │          │          │                   │               │ kernel: Bluetooth: bcsp: receive data only if registered     │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40308                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40309 │          │          │                   │               │ kernel: Bluetooth: SCO: Fix UAF on sco_conn_free             │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40309                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40312 │          │          │                   │               │ kernel: jfs: Verify inode mode when loading from disk        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40312                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40318 │          │          │                   │               │ kernel: Bluetooth: hci_sync: fix race in                     │
+│                       │                │          │          │                   │               │ hci_cmd_sync_dequeue_once                                    │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40318                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40320 │          │          │                   │               │ kernel: smb: client: fix potential cfid UAF in               │
+│                       │                │          │          │                   │               │ smb2_query_info_compound                                     │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40320                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40321 │          │          │                   │               │ kernel: wifi: brcmfmac: fix crash while sending Action       │
+│                       │                │          │          │                   │               │ Frames in standalone AP...                                   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40321                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40322 │          │          │                   │               │ kernel: fbdev: bitblit: bound-check glyph index in           │
+│                       │                │          │          │                   │               │ bit_putcs*                                                   │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40322                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40323 │          │          │                   │               │ kernel: fbcon: Set fb_display[i]->mode to NULL when the mode │
+│                       │                │          │          │                   │               │ is released                                                  │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40323                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40324 │          │          │                   │               │ kernel: NFSD: Fix crash in nfsd4_read_release()              │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40324                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40328 │          │          │                   │               │ kernel: smb: client: fix potential UAF in                    │
+│                       │                │          │          │                   │               │ smb2_close_cached_fid()                                      │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40328                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40342 │          │          │                   │               │ kernel: nvme-fc: use lock accessing port_state and rport     │
+│                       │                │          │          │                   │               │ state                                                        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40342                   │
+│                       ├────────────────┤          │          │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2025-40345 │          │          │                   │               │ kernel: usb: storage: sddr55: Reject out-of-bound new_pba    │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-40345                   │
+├───────────────────────┼────────────────┤          │          ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3.13            │ CVE-2025-8194  │          │          │ 3.13.5-2          │               │ cpython: Cpython infinite loop when parsing a tarfile        │
+│                       │                │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2025-8194                    │
+├───────────────────────┤                │          │          │                   ├───────────────┤                                                              │
+│ python3.13-dev        │                │          │          │                   │               │                                                              │
+│                       │                │          │          │                   │               │                                                              │
+├───────────────────────┤                │          │          │                   ├───────────────┤                                                              │
+│ python3.13-minimal    │                │          │          │                   │               │                                                              │
+│                       │                │          │          │                   │               │                                                              │
+└───────────────────────┴────────────────┴──────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+
+Python (python-pkg)
+===================
+Total: 12 (HIGH: 9, CRITICAL: 3)
+
+┌──────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬────────────────────────────────────────────────────────────┐
+│       Library        │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                           Title                            │
+├──────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ h11 (METADATA)       │ CVE-2025-43859 │ CRITICAL │ fixed  │ 0.14.0            │ 0.16.0        │ h11: h11 accepts some malformed Chunked-Encoding bodies    │
+│                      │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-43859                 │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+├──────────────────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ starlette (METADATA) │ CVE-2025-62727 │ HIGH     │        │ 0.41.2            │ 0.49.1        │ starlette: Starlette DoS via Range header merging          │
+│                      │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-62727                 │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+├──────────────────────┼────────────────┤          │        ├───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
+│ urllib3 (METADATA)   │ CVE-2025-66418 │          │        │ 2.2.3             │ 2.6.0         │ urllib3 is a user-friendly HTTP client library for Python. │
+│                      │                │          │        │                   │               │ Starting in ......                                         │
+│                      │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-66418                 │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      ├────────────────┤          │        │                   │               ├────────────────────────────────────────────────────────────┤
+│                      │ CVE-2025-66471 │          │        │                   │               │ urllib3 is a user-friendly HTTP client library for Python. │
+│                      │                │          │        │                   │               │ Starting in ......                                         │
+│                      │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-66471                 │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+│                      │                │          │        │                   │               │                                                            │
+└──────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────────┘
