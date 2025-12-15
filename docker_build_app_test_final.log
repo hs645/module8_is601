@@ -1,0 +1,153 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 776B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.10-slim
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.10-slim
+#2 DONE 0.6s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/7] FROM docker.io/library/python:3.10-slim@sha256:fb1feae978f1729094eb0405e5f9564e55b2b3b24db3261d30ba4f22c5001a8a
+#5 resolve docker.io/library/python:3.10-slim@sha256:fb1feae978f1729094eb0405e5f9564e55b2b3b24db3261d30ba4f22c5001a8a done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 2.23MB 1.0s done
+#6 DONE 1.0s
+
+#7 [2/7] WORKDIR /app
+#7 CACHED
+
+#8 [3/7] RUN apt-get update &&    apt-get upgrade -y &&    apt-get install -y --no-install-recommends gcc python3-dev libssl-dev &&    rm -rf /var/lib/apt/lists/* &&    python -m pip install --upgrade pip setuptools>=70.0.0 wheel &&    groupadd -r appgroup &&    useradd -r -g appgroup appuser
+#8 CACHED
+
+#9 [4/7] COPY requirements.txt .
+#9 DONE 0.1s
+
+#10 [5/7] RUN pip install --no-cache-dir -r requirements.txt
+#10 0.948 Collecting annotated-types==0.7.0 (from -r requirements.txt (line 1))
+#10 1.032   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+#10 1.061 Collecting anyio==4.6.2.post1 (from -r requirements.txt (line 2))
+#10 1.074   Downloading anyio-4.6.2.post1-py3-none-any.whl.metadata (4.7 kB)
+#10 1.125 Collecting astroid==3.3.5 (from -r requirements.txt (line 3))
+#10 1.138   Downloading astroid-3.3.5-py3-none-any.whl.metadata (4.5 kB)
+#10 1.160 Collecting certifi==2024.8.30 (from -r requirements.txt (line 4))
+#10 1.172   Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+#10 1.255 Collecting charset-normalizer==3.4.0 (from -r requirements.txt (line 5))
+#10 1.268   Downloading charset_normalizer-3.4.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (34 kB)
+#10 1.296 Collecting click==8.1.7 (from -r requirements.txt (line 6))
+#10 1.314   Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+#10 1.582 Collecting coverage==7.6.4 (from -r requirements.txt (line 7))
+#10 1.598   Downloading coverage-7.6.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (8.2 kB)
+#10 1.617 Collecting dill==0.3.9 (from -r requirements.txt (line 8))
+#10 1.636   Downloading dill-0.3.9-py3-none-any.whl.metadata (10 kB)
+#10 1.655 Collecting exceptiongroup==1.2.2 (from -r requirements.txt (line 9))
+#10 1.668   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+#10 1.709 Collecting fastapi==0.115.4 (from -r requirements.txt (line 10))
+#10 1.725   Downloading fastapi-0.115.4-py3-none-any.whl.metadata (27 kB)
+#10 1.814 Collecting greenlet==3.1.1 (from -r requirements.txt (line 11))
+#10 1.830   Downloading greenlet-3.1.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.8 kB)
+#10 1.846 Collecting h11>=0.16.0 (from -r requirements.txt (line 12))
+#10 1.861   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#10 1.881 Collecting httpcore>=1.0.6 (from -r requirements.txt (line 13))
+#10 1.895   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+#10 1.916 Collecting httpx>=0.27.2 (from -r requirements.txt (line 14))
+#10 1.932   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+#10 1.948 Collecting idna==3.10 (from -r requirements.txt (line 15))
+#10 1.965   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+#10 1.982 Collecting iniconfig==2.0.0 (from -r requirements.txt (line 16))
+#10 1.995   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+#10 2.027 Collecting isort==5.13.2 (from -r requirements.txt (line 17))
+#10 2.041   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+#10 2.061 Collecting Jinja2==3.1.4 (from -r requirements.txt (line 18))
+#10 2.077   Downloading jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+#10 2.129 Collecting MarkupSafe==3.0.2 (from -r requirements.txt (line 19))
+#10 2.141   Downloading MarkupSafe-3.0.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.0 kB)
+#10 2.160 Collecting mccabe==0.7.0 (from -r requirements.txt (line 20))
+#10 2.172   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+#10 2.192 Collecting packaging==24.2 (from -r requirements.txt (line 21))
+#10 2.205   Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+#10 2.226 Collecting platformdirs==4.3.6 (from -r requirements.txt (line 22))
+#10 2.246   Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+#10 2.287 Collecting playwright==1.48.0 (from -r requirements.txt (line 23))
+#10 2.302   Downloading playwright-1.48.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.5 kB)
+#10 2.322 Collecting pluggy==1.5.0 (from -r requirements.txt (line 24))
+#10 2.335   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+#10 2.439 Collecting pydantic==2.9.2 (from -r requirements.txt (line 25))
+#10 2.453   Downloading pydantic-2.9.2-py3-none-any.whl.metadata (149 kB)
+#10 2.961 Collecting pydantic_core==2.23.4 (from -r requirements.txt (line 26))
+#10 2.974   Downloading pydantic_core-2.23.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+#10 3.026 Collecting pyee==12.0.0 (from -r requirements.txt (line 27))
+#10 3.042   Downloading pyee-12.0.0-py3-none-any.whl.metadata (2.8 kB)
+#10 3.074 Collecting pylint==3.3.1 (from -r requirements.txt (line 28))
+#10 3.091   Downloading pylint-3.3.1-py3-none-any.whl.metadata (12 kB)
+#10 3.122 Collecting pytest==8.3.3 (from -r requirements.txt (line 29))
+#10 3.138   Downloading pytest-8.3.3-py3-none-any.whl.metadata (7.5 kB)
+#10 3.161 Collecting pytest-cov==6.0.0 (from -r requirements.txt (line 30))
+#10 3.176   Downloading pytest_cov-6.0.0-py3-none-any.whl.metadata (27 kB)
+#10 3.199 Collecting pytest-pylint==0.21.0 (from -r requirements.txt (line 31))
+#10 3.215   Downloading pytest_pylint-0.21.0-py3-none-any.whl.metadata (6.4 kB)
+#10 3.242 Collecting requests==2.32.3 (from -r requirements.txt (line 32))
+#10 3.255   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+#10 3.270 Collecting sniffio==1.3.1 (from -r requirements.txt (line 33))
+#10 3.285   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+#10 3.315 Collecting starlette>=0.49.1 (from -r requirements.txt (line 34))
+#10 3.327   Downloading starlette-0.50.0-py3-none-any.whl.metadata (6.3 kB)
+#10 3.357 Collecting tomli==2.0.2 (from -r requirements.txt (line 35))
+#10 3.372   Downloading tomli-2.0.2-py3-none-any.whl.metadata (10.0 kB)
+#10 3.395 Collecting tomlkit==0.13.2 (from -r requirements.txt (line 36))
+#10 3.408   Downloading tomlkit-0.13.2-py3-none-any.whl.metadata (2.7 kB)
+#10 3.431 Collecting typing_extensions==4.12.2 (from -r requirements.txt (line 37))
+#10 3.449   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+#10 3.478 Collecting urllib3>=2.6.0 (from -r requirements.txt (line 38))
+#10 3.490   Downloading urllib3-2.6.2-py3-none-any.whl.metadata (6.6 kB)
+#10 3.523 Collecting uvicorn==0.32.0 (from -r requirements.txt (line 39))
+#10 3.538   Downloading uvicorn-0.32.0-py3-none-any.whl.metadata (6.6 kB)
+#10 3.560 INFO: pip is looking at multiple versions of fastapi to determine which version is compatible with other requirements. This could take a while.
+#10 3.562 ERROR: Cannot install -r requirements.txt (line 10) and starlette>=0.49.1 because these package versions have conflicting dependencies.
+#10 3.562 
+#10 3.562 The conflict is caused by:
+#10 3.562     The user requested starlette>=0.49.1
+#10 3.562     fastapi 0.115.4 depends on starlette<0.42.0 and >=0.40.0
+#10 3.562 
+#10 3.562 Additionally, some packages in these conflicts have no matching distributions available for your environment:
+#10 3.562     starlette
+#10 3.562 
+#10 3.562 To fix this you could try to:
+#10 3.562 1. loosen the range of package versions you've specified
+#10 3.562 2. remove package versions to allow pip to attempt to solve the dependency conflict
+#10 3.562 
+#10 3.655 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+#10 ERROR: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
+------
+ > [5/7] RUN pip install --no-cache-dir -r requirements.txt:
+3.562     fastapi 0.115.4 depends on starlette<0.42.0 and >=0.40.0
+3.562 
+3.562 Additionally, some packages in these conflicts have no matching distributions available for your environment:
+3.562     starlette
+3.562 
+3.562 To fix this you could try to:
+3.562 1. loosen the range of package versions you've specified
+3.562 2. remove package versions to allow pip to attempt to solve the dependency conflict
+3.562 
+3.655 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+------
+Dockerfile:17
+--------------------
+  15 |     
+  16 |     COPY requirements.txt .
+  17 | >>> RUN pip install --no-cache-dir -r requirements.txt
+  18 |     
+  19 |     COPY . .
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
