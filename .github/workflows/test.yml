@@ -1,4 +1,4 @@
-name: CI/CD
+name: test
 
 on:
  push:
@@ -75,8 +75,8 @@ jobs:
        with:
          push: true
          tags: |
-           kaw393939/601_module8:latest
-           kaw393939/601_module8:${{ github.sha }}
+           hs645njit/module8:latest
+           hs645njit/module8:${{ github.sha }}
          platforms: linux/amd64,linux/arm64
-         cache-from: type=registry,ref=kaw393939/601_module8:cache
+         cache-from: type=registry,ref=hs645njit/module8:cache
          cache-to: type=inline,mode=max
