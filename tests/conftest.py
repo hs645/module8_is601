@@ -5,7 +5,7 @@ import time
 import sys
 import pytest
 from playwright.sync_api import sync_playwright
-import requests
+import httpx
 
 
 @pytest.fixture(scope='session')
@@ -26,16 +26,17 @@ def fastapi_server():
 
     print("Starting FastAPI server...")
 
-    while time.time() - start_time < timeout:
-        try:
-            response = requests.get(server_url)
-            if response.status_code == 200:
-                server_up = True
-                print("FastAPI server is up and running.")
-                break
-        except requests.exceptions.ConnectionError:
-            pass
-        time.sleep(1)
+    with httpx.Client(timeout=1.0) as client:
+        while time.time() - start_time < timeout:
+            try:
+                response = client.get(server_url)
+                if response.status_code == 200:
+                    server_up = True
+                    print("FastAPI server is up and running.")
+                    break
+            except httpx.RequestError:
+                pass
+            time.sleep(1)
 
     if not server_up:
         fastapi_process.terminate()
