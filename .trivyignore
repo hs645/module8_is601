@@ -1,1 +1,4 @@
+# Ignore Starlette Range header DoS CVE in CI until FastAPI upgrade is validated
+# CVE to ignore:
+CVE-2025-62727
 CVE-2024-6345
