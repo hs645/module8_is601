@@ -1,0 +1,588 @@
+Collecting annotated-types==0.7.0 (from -r requirements.txt (line 1))
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting anyio==4.6.2.post1 (from -r requirements.txt (line 2))
+  Downloading anyio-4.6.2.post1-py3-none-any.whl.metadata (4.7 kB)
+Collecting astroid==3.3.5 (from -r requirements.txt (line 3))
+  Downloading astroid-3.3.5-py3-none-any.whl.metadata (4.5 kB)
+Collecting certifi==2024.8.30 (from -r requirements.txt (line 4))
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting charset-normalizer==3.4.0 (from -r requirements.txt (line 5))
+  Downloading charset_normalizer-3.4.0-py3-none-any.whl.metadata (34 kB)
+Collecting click==8.1.7 (from -r requirements.txt (line 6))
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting coverage==7.6.4 (from -r requirements.txt (line 7))
+  Downloading coverage-7.6.4.tar.gz (798 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.7/798.7 kB 22.7 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting dill==0.3.9 (from -r requirements.txt (line 8))
+  Downloading dill-0.3.9-py3-none-any.whl.metadata (10 kB)
+Collecting exceptiongroup==1.2.2 (from -r requirements.txt (line 9))
+  Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+Collecting fastapi==0.115.4 (from -r requirements.txt (line 10))
+  Downloading fastapi-0.115.4-py3-none-any.whl.metadata (27 kB)
+Collecting greenlet==3.1.1 (from -r requirements.txt (line 11))
+  Downloading greenlet-3.1.1.tar.gz (186 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting h11==0.14.0 (from -r requirements.txt (line 12))
+  Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting httpcore==1.0.6 (from -r requirements.txt (line 13))
+  Downloading httpcore-1.0.6-py3-none-any.whl.metadata (21 kB)
+Collecting httpx==0.27.2 (from -r requirements.txt (line 14))
+  Downloading httpx-0.27.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting idna==3.10 (from -r requirements.txt (line 15))
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting iniconfig==2.0.0 (from -r requirements.txt (line 16))
+  Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting isort==5.13.2 (from -r requirements.txt (line 17))
+  Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+Collecting Jinja2==3.1.4 (from -r requirements.txt (line 18))
+  Downloading jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting MarkupSafe==3.0.2 (from -r requirements.txt (line 19))
+  Downloading markupsafe-3.0.2.tar.gz (20 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting mccabe==0.7.0 (from -r requirements.txt (line 20))
+  Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting packaging==24.2 (from -r requirements.txt (line 21))
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting platformdirs==4.3.6 (from -r requirements.txt (line 22))
+  Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+Collecting playwright==1.48.0 (from -r requirements.txt (line 23))
+  Downloading playwright-1.48.0-py3-none-macosx_11_0_arm64.whl.metadata (3.5 kB)
+Collecting pluggy==1.5.0 (from -r requirements.txt (line 24))
+  Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pydantic==2.9.2 (from -r requirements.txt (line 25))
+  Downloading pydantic-2.9.2-py3-none-any.whl.metadata (149 kB)
+Collecting pydantic_core==2.23.4 (from -r requirements.txt (line 26))
+  Downloading pydantic_core-2.23.4.tar.gz (402 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pyee==12.0.0 (from -r requirements.txt (line 27))
+  Downloading pyee-12.0.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting pylint==3.3.1 (from -r requirements.txt (line 28))
+  Downloading pylint-3.3.1-py3-none-any.whl.metadata (12 kB)
+Collecting pytest==8.3.3 (from -r requirements.txt (line 29))
+  Downloading pytest-8.3.3-py3-none-any.whl.metadata (7.5 kB)
+Collecting pytest-cov==6.0.0 (from -r requirements.txt (line 30))
+  Downloading pytest_cov-6.0.0-py3-none-any.whl.metadata (27 kB)
+Collecting pytest-pylint==0.21.0 (from -r requirements.txt (line 31))
+  Downloading pytest_pylint-0.21.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting requests==2.32.3 (from -r requirements.txt (line 32))
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting sniffio==1.3.1 (from -r requirements.txt (line 33))
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting starlette==0.41.2 (from -r requirements.txt (line 34))
+  Downloading starlette-0.41.2-py3-none-any.whl.metadata (6.0 kB)
+Collecting tomli==2.0.2 (from -r requirements.txt (line 35))
+  Downloading tomli-2.0.2-py3-none-any.whl.metadata (10.0 kB)
+Collecting tomlkit==0.13.2 (from -r requirements.txt (line 36))
+  Downloading tomlkit-0.13.2-py3-none-any.whl.metadata (2.7 kB)
+Collecting typing_extensions==4.12.2 (from -r requirements.txt (line 37))
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting urllib3==2.2.3 (from -r requirements.txt (line 38))
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting uvicorn==0.32.0 (from -r requirements.txt (line 39))
+  Downloading uvicorn-0.32.0-py3-none-any.whl.metadata (6.6 kB)
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading anyio-4.6.2.post1-py3-none-any.whl (90 kB)
+Downloading astroid-3.3.5-py3-none-any.whl (274 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading charset_normalizer-3.4.0-py3-none-any.whl (49 kB)
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+Downloading dill-0.3.9-py3-none-any.whl (119 kB)
+Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+Downloading fastapi-0.115.4-py3-none-any.whl (94 kB)
+Downloading pydantic-2.9.2-py3-none-any.whl (434 kB)
+Downloading starlette-0.41.2-py3-none-any.whl (73 kB)
+Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+Downloading httpcore-1.0.6-py3-none-any.whl (78 kB)
+Downloading httpx-0.27.2-py3-none-any.whl (76 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+Downloading jinja2-3.1.4-py3-none-any.whl (133 kB)
+Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Downloading playwright-1.48.0-py3-none-macosx_11_0_arm64.whl (33.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.3/33.3 MB 87.2 MB/s  0:00:00
+Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+Downloading pyee-12.0.0-py3-none-any.whl (14 kB)
+Downloading pylint-3.3.1-py3-none-any.whl (521 kB)
+Downloading pytest-8.3.3-py3-none-any.whl (342 kB)
+Downloading pytest_cov-6.0.0-py3-none-any.whl (22 kB)
+Downloading pytest_pylint-0.21.0-py3-none-any.whl (9.8 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading tomli-2.0.2-py3-none-any.whl (13 kB)
+Downloading tomlkit-0.13.2-py3-none-any.whl (37 kB)
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading uvicorn-0.32.0-py3-none-any.whl (63 kB)
+Building wheels for collected packages: coverage, greenlet, MarkupSafe, pydantic_core
+  Building wheel for coverage (pyproject.toml): started
+  Building wheel for coverage (pyproject.toml): finished with status 'done'
+  Created wheel for coverage: filename=coverage-7.6.4-cp314-cp314-macosx_15_0_arm64.whl size=207147 sha256=77303731d9ffbe743c68b58d6f4e45641041414b4972e056581fdc4ba0dbdef0
+  Stored in directory: /private/var/folders/25/qxzccb653vb2v0pldzwg_qhc0000gn/T/pip-ephem-wheel-cache-y2_nrvk0/wheels/1d/f7/39/50160aef7598763e8d3e03932ae80f3cc0115a3d8bba46bae3
+  Building wheel for greenlet (pyproject.toml): started
+  Building wheel for greenlet (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Building wheel for greenlet (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [235 lines of output]
+      /private/var/folders/25/qxzccb653vb2v0pldzwg_qhc0000gn/T/pip-build-env-p7s5f_5e/overlay/lib/python3.14/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+      
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+      
+              License :: OSI Approved :: MIT License
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        self._finalize_license_expression()
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/__init__.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      creating build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/__init__.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      creating build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_version.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_weakref.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_slp_switch.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_gc.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/leakcheck.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_switch_two_greenlets.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_generator.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_greenlet_trash.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_throw.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_tracing.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_cpp_exception.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_switch_three_greenlets.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_cpp.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_contextvars.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_greenlet.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_extension_interface.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_clearing_run_switches.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/__init__.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_switch_three_greenlets2.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/fail_initialstub_already_started.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_generator_nested.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_stack_saved.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/test_leaks.py -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      running egg_info
+      writing src/greenlet.egg-info/PKG-INFO
+      writing dependency_links to src/greenlet.egg-info/dependency_links.txt
+      writing requirements to src/greenlet.egg-info/requires.txt
+      writing top-level names to src/greenlet.egg-info/top_level.txt
+      reading manifest file 'src/greenlet.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no previously-included files found matching 'benchmarks/*.json'
+      no previously-included directories found matching 'docs/_build'
+      warning: no files found matching '*.py' under directory 'appveyor'
+      warning: no previously-included files matching '*.pyc' found anywhere in distribution
+      warning: no previously-included files matching '*.pyd' found anywhere in distribution
+      warning: no previously-included files matching '*.so' found anywhere in distribution
+      warning: no previously-included files matching '.coverage' found anywhere in distribution
+      adding license file 'LICENSE'
+      adding license file 'LICENSE.PSF'
+      adding license file 'AUTHORS'
+      writing manifest file 'src/greenlet.egg-info/SOURCES.txt'
+      copying src/greenlet/CObjects.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/PyGreenlet.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/PyGreenlet.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/PyGreenletUnswitchable.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/PyModule.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TBrokenGreenlet.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TExceptionState.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TGreenlet.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TGreenlet.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TGreenletGlobals.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TMainGreenlet.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TPythonState.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TStackState.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TThreadState.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TThreadStateCreator.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TThreadStateDestroy.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/TUserGreenlet.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_allocator.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_compiler_compat.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_cpython_add_pending.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_cpython_compat.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_exceptions.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_internal.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_refs.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_slp_switch.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/greenlet_thread_support.hpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/slp_platformselect.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet
+      copying src/greenlet/platform/setup_switch_x64_masm.cmd -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_aarch64_gcc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_alpha_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_amd64_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_arm32_gcc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_arm32_ios.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_arm64_masm.asm -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_arm64_masm.obj -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_arm64_msvc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_csky_gcc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_loongarch64_linux.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_m68k_gcc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_mips_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_ppc64_aix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_ppc64_linux.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_ppc_aix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_ppc_linux.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_ppc_macosx.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_ppc_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_riscv_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_s390_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_sh_gcc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_sparc_sun_gcc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_x32_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_x64_masm.asm -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_x64_masm.obj -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_x64_msvc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_x86_msvc.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/platform/switch_x86_unix.h -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/platform
+      copying src/greenlet/tests/_test_extension.c -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      copying src/greenlet/tests/_test_extension_cpp.cpp -> build/lib.macosx-15.0-arm64-cpython-314/greenlet/tests
+      running build_ext
+      building 'greenlet._greenlet' extension
+      creating build/temp.macosx-15.0-arm64-cpython-314/src/greenlet
+      clang++ -fno-strict-overflow -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -O3 -Wall -I/Users/hayksamvelyan/Desktop/module8_is601/venv3/include -I/opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -c src/greenlet/greenlet.cpp -o build/temp.macosx-15.0-arm64-cpython-314/src/greenlet/greenlet.o --std=c++11
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:626:29: error: variable has incomplete type '_PyInterpreterFrame'
+        626 |         _PyInterpreterFrame iframe_copy;
+            |                             ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:627:71: error: invalid application of 'sizeof' to an incomplete type '_PyInterpreterFrame'
+        627 |         this->stack_state.copy_from_stack(&iframe_copy, iframe, sizeof(*iframe));
+            |                                                                       ^~~~~~~~~
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:654:24: error: member access into incomplete type '_PyInterpreterFrame'
+        654 |             if (!iframe->frame_obj) {
+            |                        ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:656:37: error: variable has incomplete type '_PyInterpreterFrame'
+        656 |                 _PyInterpreterFrame dummy_iframe;
+            |                                     ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:661:38: error: use of undeclared identifier 'FRAME_OWNED_BY_GENERATOR'
+        661 |                 dummy_iframe.owner = FRAME_OWNED_BY_GENERATOR;
+            |                                      ^
+      src/greenlet/TGreenlet.cpp:686:45: error: member access into incomplete type '_PyInterpreterFrame'
+        686 |                 memcpy(&last_complete_iframe->frame_obj->_f_frame_data[0],
+            |                                             ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:687:45: error: member access into incomplete type '_PyInterpreterFrame'
+        687 |                        &last_complete_iframe->previous, sizeof(void *));
+            |                                             ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:688:37: error: member access into incomplete type '_PyInterpreterFrame'
+        688 |                 last_complete_iframe->previous = iframe;
+            |                                     ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:705:37: error: member access into incomplete type '_PyInterpreterFrame'
+        705 |         memcpy(&last_complete_iframe->frame_obj->_f_frame_data[0],
+            |                                     ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:706:37: error: member access into incomplete type '_PyInterpreterFrame'
+        706 |                &last_complete_iframe->previous, sizeof(void *));
+            |                                     ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:31:
+      src/greenlet/TGreenlet.cpp:707:29: error: member access into incomplete type '_PyInterpreterFrame'
+        707 |         last_complete_iframe->previous = nullptr;
+            |                             ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:36:
+      src/greenlet/TPythonState.cpp:137:31: error: use of undeclared identifier 'Py_C_RECURSION_LIMIT'
+        137 |     this->c_recursion_depth = Py_C_RECURSION_LIMIT - tstate->c_recursion_remaining;
+            |                               ^
+      src/greenlet/TPythonState.cpp:137:62: error: no member named 'c_recursion_remaining' in '_ts'
+        137 |     this->c_recursion_depth = Py_C_RECURSION_LIMIT - tstate->c_recursion_remaining;
+            |                                                      ~~~~~~  ^
+      src/greenlet/TPythonState.cpp:179:51: error: member access into incomplete type '_PyInterpreterFrame'
+        179 |         _PyInterpreterFrame *prev_exposed = iframe->previous;
+            |                                                   ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:36:
+      src/greenlet/TPythonState.cpp:181:23: error: member access into incomplete type '_PyInterpreterFrame'
+        181 |         memcpy(&iframe->previous, &iframe->frame_obj->_f_frame_data[0],
+            |                       ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:36:
+      src/greenlet/TPythonState.cpp:181:42: error: member access into incomplete type '_PyInterpreterFrame'
+        181 |         memcpy(&iframe->previous, &iframe->frame_obj->_f_frame_data[0],
+            |                                          ^
+      /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14/cpython/pyframe.h:25:8: note: forward declaration of '_PyInterpreterFrame'
+         25 | struct _PyInterpreterFrame;
+            |        ^
+      In file included from src/greenlet/greenlet.cpp:36:
+      src/greenlet/TPythonState.cpp:212:13: error: no member named 'c_recursion_remaining' in '_ts'
+        212 |     tstate->c_recursion_remaining = Py_C_RECURSION_LIMIT - this->c_recursion_depth;
+            |     ~~~~~~  ^
+      src/greenlet/TPythonState.cpp:212:37: error: use of undeclared identifier 'Py_C_RECURSION_LIMIT'
+        212 |     tstate->c_recursion_remaining = Py_C_RECURSION_LIMIT - this->c_recursion_depth;
+            |                                     ^
+      18 errors generated.
+      error: command '/usr/bin/clang++' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for greenlet
+  Building wheel for MarkupSafe (pyproject.toml): started
+  Building wheel for MarkupSafe (pyproject.toml): finished with status 'done'
+  Created wheel for MarkupSafe: filename=markupsafe-3.0.2-cp314-cp314-macosx_15_0_arm64.whl size=12207 sha256=0794a242d564ae62b31f20d19f066e89039d591f1218d4f4428f6fd4a8e825c7
+  Stored in directory: /private/var/folders/25/qxzccb653vb2v0pldzwg_qhc0000gn/T/pip-ephem-wheel-cache-y2_nrvk0/wheels/31/d7/9c/91ea0a7f1bd99970c6602ae982d137132c904433343f48095b
+  Building wheel for pydantic_core (pyproject.toml): started
+  Building wheel for pydantic_core (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Building wheel for pydantic_core (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [175 lines of output]
+      Running `maturin pep517 build-wheel -i /Users/hayksamvelyan/Desktop/module8_is601/venv3/bin/python --compatibility off`
+      Python reports SOABI: cpython-314-darwin
+      Computed rustc target triple: aarch64-apple-darwin
+      Installation directory: /Users/hayksamvelyan/Library/Caches/puccinialin
+      Rustup already downloaded
+      Installing rust to /Users/hayksamvelyan/Library/Caches/puccinialin/rustup
+      warn: It looks like you have an existing rustup settings file at:
+      warn: /Users/hayksamvelyan/.rustup/settings.toml
+      warn: Rustup will install the default toolchain as specified in the settings file,
+      warn: instead of the one inferred from the default host triple.
+      info: profile set to 'minimal'
+      info: default host triple is aarch64-apple-darwin
+      warn: Updating existing toolchain, profile choice will be ignored
+      info: syncing channel updates for 'stable-aarch64-apple-darwin'
+      info: default toolchain set to 'stable-aarch64-apple-darwin'
+      Checking if cargo is installed
+      cargo 1.92.0 (344c4567c 2025-10-21)
+      📦 Including license file `LICENSE`
+      🍹 Building a mixed python/rust project
+      🔗 Found pyo3 bindings
+      🐍 Found CPython 3.14 at /Users/hayksamvelyan/Desktop/module8_is601/venv3/bin/python
+      📡 Using build options features, bindings from pyproject.toml
+         Compiling proc-macro2 v1.0.86
+         Compiling unicode-ident v1.0.12
+         Compiling target-lexicon v0.12.14
+         Compiling python3-dll-a v0.2.10
+         Compiling once_cell v1.19.0
+         Compiling autocfg v1.3.0
+         Compiling stable_deref_trait v1.2.0
+         Compiling libc v0.2.155
+         Compiling heck v0.5.0
+         Compiling litemap v0.7.3
+         Compiling version_check v0.9.5
+         Compiling writeable v0.5.5
+         Compiling rustversion v1.0.17
+         Compiling num-traits v0.2.19
+         Compiling memoffset v0.9.1
+         Compiling icu_locid_transform_data v1.5.0
+         Compiling static_assertions v1.1.0
+         Compiling memchr v2.7.4
+         Compiling tinyvec_macros v0.1.1
+         Compiling cfg-if v1.0.0
+         Compiling radium v0.7.0
+         Compiling tinyvec v1.6.1
+         Compiling quote v1.0.36
+         Compiling pyo3-build-config v0.22.2
+         Compiling syn v2.0.68
+         Compiling lexical-util v0.8.5
+         Compiling ahash v0.8.11
+         Compiling tap v1.0.1
+         Compiling serde v1.0.209
+         Compiling smallvec v1.13.2
+         Compiling icu_properties_data v1.5.0
+         Compiling num-integer v0.1.46
+         Compiling wyz v0.5.1
+         Compiling unicode-normalization v0.1.23
+         Compiling num-bigint v0.4.6
+         Compiling lexical-parse-integer v0.8.6
+         Compiling aho-corasick v1.1.3
+         Compiling getrandom v0.2.15
+         Compiling icu_normalizer_data v1.5.0
+         Compiling equivalent v1.0.1
+         Compiling utf16_iter v1.0.5
+         Compiling zerocopy v0.7.34
+         Compiling serde_json v1.0.128
+         Compiling regex-syntax v0.8.4
+         Compiling hashbrown v0.14.5
+         Compiling unindent v0.2.3
+         Compiling utf8_iter v1.0.4
+         Compiling indoc v2.0.5
+         Compiling unicode-bidi v0.3.15
+         Compiling write16 v1.0.0
+         Compiling percent-encoding v2.3.1
+         Compiling funty v2.0.0
+         Compiling pyo3-macros-backend v0.22.2
+         Compiling pyo3-ffi v0.22.2
+         Compiling pyo3 v0.22.2
+         Compiling jiter v0.5.0
+         Compiling bitvec v1.0.1
+         Compiling form_urlencoded v1.2.1
+         Compiling idna v0.5.0
+         Compiling pydantic-core v2.23.4 (/private/var/folders/25/qxzccb653vb2v0pldzwg_qhc0000gn/T/pip-install-u040kfc8/pydantic-core_dcbf254a50d44d409d55e4487f30e744)
+         Compiling regex-automata v0.4.7
+         Compiling indexmap v2.2.6
+         Compiling synstructure v0.13.1
+         Compiling lexical-parse-float v0.8.5
+         Compiling itoa v1.0.11
+         Compiling ryu v1.0.18
+         Compiling url v2.5.2
+         Compiling base64 v0.22.1
+         Compiling uuid v1.10.0
+         Compiling hex v0.4.3
+         Compiling zerofrom-derive v0.1.4
+         Compiling yoke-derive v0.7.4
+         Compiling zerovec-derive v0.10.3
+         Compiling displaydoc v0.2.5
+         Compiling icu_provider_macros v1.5.0
+         Compiling strum_macros v0.26.4
+         Compiling serde_derive v1.0.209
+         Compiling regex v1.10.6
+         Compiling enum_dispatch v0.3.13
+         Compiling zerofrom v0.1.4
+         Compiling yoke v0.7.4
+         Compiling pyo3-macros v0.22.2
+         Compiling zerovec v0.10.4
+         Compiling strum v0.26.3
+         Compiling speedate v0.14.4
+         Compiling tinystr v0.7.6
+         Compiling icu_collections v1.5.0
+         Compiling icu_locid v1.5.0
+         Compiling icu_provider v1.5.0
+         Compiling icu_locid_transform v1.5.0
+      error[E0425]: cannot find function, tuple struct or tuple variant `PyUnicode_New` in module `pyo3::ffi`
+         --> /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jiter-0.5.0/src/py_string_cache.rs:205:26
+          |
+      205 |       let ptr = pyo3::ffi::PyUnicode_New(s.len() as isize, 127);
+          |                            ^^^^^^^^^^^^^ help: a function with a similar name exists: `PySlice_New`
+          |
+         ::: /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.22.2/src/sliceobject.rs:50:5
+          |
+       50 | /     pub fn PySlice_New(
+       51 | |         start: *mut PyObject,
+       52 | |         stop: *mut PyObject,
+       53 | |         step: *mut PyObject,
+       54 | |     ) -> *mut PyObject;
+          | |_______________________- similarly named function `PySlice_New` defined here
+      
+      error[E0425]: cannot find function, tuple struct or tuple variant `PyUnicode_KIND` in module `pyo3::ffi`
+         --> /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jiter-0.5.0/src/py_string_cache.rs:207:33
+          |
+      207 |       debug_assert_eq!(pyo3::ffi::PyUnicode_KIND(ptr), pyo3::ffi::PyUnicode_1BYTE_KIND);
+          |                                   ^^^^^^^^^^^^^^ help: a function with a similar name exists: `PyUnicode_Find`
+          |
+         ::: /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.22.2/src/unicodeobject.rs:299:5
+          |
+      299 | /     pub fn PyUnicode_Find(
+      300 | |         str: *mut PyObject,
+      301 | |         substr: *mut PyObject,
+      302 | |         start: Py_ssize_t,
+      303 | |         end: Py_ssize_t,
+      304 | |         direction: c_int,
+      305 | |     ) -> Py_ssize_t;
+          | |____________________- similarly named function `PyUnicode_Find` defined here
+      
+      error[E0425]: cannot find value `PyUnicode_1BYTE_KIND` in module `pyo3::ffi`
+         --> /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jiter-0.5.0/src/py_string_cache.rs:207:65
+          |
+      207 |     debug_assert_eq!(pyo3::ffi::PyUnicode_KIND(ptr), pyo3::ffi::PyUnicode_1BYTE_KIND);
+          |                                                                 ^^^^^^^^^^^^^^^^^^^^ not found in `pyo3::ffi`
+      
+      error[E0425]: cannot find function, tuple struct or tuple variant `PyUnicode_DATA` in module `pyo3::ffi`
+         --> /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/jiter-0.5.0/src/py_string_cache.rs:208:31
+          |
+      208 |       let data_ptr = pyo3::ffi::PyUnicode_DATA(ptr).cast();
+          |                                 ^^^^^^^^^^^^^^ help: a function with a similar name exists: `PyUnicode_Find`
+          |
+         ::: /Users/hayksamvelyan/Library/Caches/puccinialin/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.22.2/src/unicodeobject.rs:299:5
+          |
+      299 | /     pub fn PyUnicode_Find(
+      300 | |         str: *mut PyObject,
+      301 | |         substr: *mut PyObject,
+      302 | |         start: Py_ssize_t,
+      303 | |         end: Py_ssize_t,
+      304 | |         direction: c_int,
+      305 | |     ) -> Py_ssize_t;
+          | |____________________- similarly named function `PyUnicode_Find` defined here
+      
+      For more information about this error, try `rustc --explain E0425`.
+      error: could not compile `jiter` (lib) due to 4 previous errors
+      warning: build failed, waiting for other jobs to finish...
+      💥 maturin failed
+        Caused by: Failed to build a native library through cargo
+        Caused by: Cargo build finished with "exit status: 101": `env -u CARGO PYO3_BUILD_EXTENSION_MODULE="1" PYO3_ENVIRONMENT_SIGNATURE="cpython-3.14-64bit" PYO3_PYTHON="/Users/hayksamvelyan/Desktop/module8_is601/venv3/bin/python" PYTHON_SYS_EXECUTABLE="/Users/hayksamvelyan/Desktop/module8_is601/venv3/bin/python" "cargo" "rustc" "--profile" "release" "--features" "pyo3/extension-module" "--message-format" "json-render-diagnostics" "--manifest-path" "/private/var/folders/25/qxzccb653vb2v0pldzwg_qhc0000gn/T/pip-install-u040kfc8/pydantic-core_dcbf254a50d44d409d55e4487f30e744/Cargo.toml" "--lib" "--crate-type" "cdylib" "--" "-C" "link-arg=-undefined" "-C" "link-arg=dynamic_lookup" "-C" "link-args=-Wl,-install_name,@rpath/pydantic_core._pydantic_core.cpython-314-darwin.so"`
+      Rust not found, installing into a temporary directory
+      Error: command ['maturin', 'pep517', 'build-wheel', '-i', '/Users/hayksamvelyan/Desktop/module8_is601/venv3/bin/python', '--compatibility', 'off'] returned non-zero exit status 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pydantic_core
+Successfully built coverage MarkupSafe
+Failed to build greenlet pydantic_core
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> greenlet, pydantic_core
